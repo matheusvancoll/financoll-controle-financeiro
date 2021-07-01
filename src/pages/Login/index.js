@@ -7,15 +7,15 @@ export default function Acess() {
 
   const [Acess, setAcess] = useState("Login")
 
-  if(Acess == "Login") {
+  if(Acess === "Login") {
     return Login()
   }
 
-  if(Acess == "Forgot") {
+  if(Acess === "Forgot") {
     return Forgot()
   }
 
-  if(Acess == "Register") {
+  if(Acess === "Register") {
     return Register()
   } 
 
