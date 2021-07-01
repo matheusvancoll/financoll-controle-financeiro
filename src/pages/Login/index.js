@@ -99,7 +99,7 @@ function Register() {
           </div>
           <div className="input-actions">
             <Link onClick={()=> setAcess("Forgot")}>Esqueceu a senha?</Link>
-            <Link to="/dashboard" id="btnAcess">Acessar</Link>
+            <Link onClick={()=> setAcess("Login")}id="btnAcess">Cadastrar</Link>
           </div>
         </div>
       </div>
