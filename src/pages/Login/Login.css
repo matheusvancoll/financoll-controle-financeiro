@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;800&display=swap');
 
 :root {
-  --color-one: #30F598;
-  --color-two: #1A8251;
-  --color-three: #27C279;
+  --color-one: #482D75;
+  --color-two: #FFFFFF;
+  --color-three: #985EF7;
 }
 
+/* Styles General of page */
 .login__container {
   width: 100%;
   height: 100vh;
@@ -13,102 +14,139 @@
   padding: 0;
   font-family: 'Nunito', sans-serif;
   background-color: var(--color-one);
+}
+
+/* Styles of Title page */
+.login__title-app {
+  padding-top: 2rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  color: var(--color-two);
+}
+
+/* Login area container */
+.login__acess {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Register Only */
+
+/* Tabs */
+.login__tabs {
+  display: flex;
+  width: 85%;
+  justify-content: space-around;
+  transition: .8s;
+}
+
+.login__tabs a {
+  text-decoration: none;
+}
+
+#tab-active,
+#tab-disable {
+  height: 2rem;
+  padding-top: 0.25rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+}
+
+#tab-active {
+  width: 60%;
+  color: #000;
+  background-color: var(--color-two);
+}
+
+#tab-disable {
+  width: 40%;
+  color: #FFFFFF;
+  border-radius: 10px 10px 0 0;
+  background-color: var(--color-three);
+}
+
+#tab-disable:hover {
+  color: #000;
+}
+
+/* Inputs */
+.login__acess,
+.login__input {
+  width: 85%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  transition: .8s;
 }
 
-.login__title-app {
-  padding-top: 4rem;
-  text-align: center;
-  margin-bottom: -4rem;
-}
-
-.login__input-area {
-  width: 92%;
-  height: 60vh;
-  padding: 0;
+.login__input {
+  height: 40vh;
   background-color: var(--color-two);
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  transition: .5s;
+  border-radius: 0 0 10px 10px;
+}
+
+.register {
+  height: 60vh;
 }
 
 .input-data {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 90%;
+  margin: 2rem;
+}
+
+.input-data p {
+  font-weight: 400;
 }
 
 .input-data input {
-  width: 85%;
-  height: 2.75rem;
-  margin-bottom: 1rem;
-  padding-left: 1rem;
-  font-size: 1.25rem;
-  border-radius: 20px;
+  width: 100%;
+  height: 2rem;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 0.6rem;
+  background: rgba(0, 0, 0, 0.15);
 }
 
-.input-data button {
-  width: 45%;
-  height: 2.75rem;
-  margin-top: 2.5rem;
-  margin-bottom: 1.25rem;
-  border-radius: 20px;
+/* Only Forgot */
+#forgot-active {
+  margin-top: 3.5rem;
+  margin-bottom: 4.5rem;
+}
+
+/* Buttons Actions */
+.input-actions {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.input-actions a {
+  text-decoration: none;
+  color: #000;
+  line-height: 2rem;
+}
+
+#btnAcess {
+  width: 6rem;
+  height: 2rem;
+  text-align: center;
   background-color: var(--color-three);
-  font-size: 1.25rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #FFF;
-  transition: .3s;
+  border-radius: 10px;
+  transition: .5s;
 }
 
-.input-data button:hover {
-  background-color: var(--color-one);
-}
-
-.input-data a {
-  margin-top: 2rem;
-  margin-bottom: -2rem;
-  text-decoration: none;
-
-  text-align: center;
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: #FFF;
-
-  transition: .3s;
-}
-
-.input-data a:hover {
-  color: black;
-}
-
-.login__register {
-  margin-top: -4rem;
-  padding-bottom: 1.75rem;
-
-  text-align: center;
-  font-size: 1.3rem;
-  font-weight: bold;
-}
-
-.login__register a {
-  color: black;
-  text-decoration: none;
-  transition: .3s;
-}
-
-.login__register a:hover {
-  color: #FFF;
+#btnAcess:hover {
+  color: #FFFFFF;
 }
 
 
 @media only screen and (min-width: 568px) {
-  .login__input-area {
-    width: 50%;
+
+  .login__acess,
+  .login__input,
+  .login__tabs {
+    width: 65%;
   }
 }
