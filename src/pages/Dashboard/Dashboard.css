@@ -23,54 +23,125 @@
   align-items: center;
 }
 
+/* Card */
 .card {
   width: 90%;
   min-height: 8rem;
-  background-color: var;
-  border-radius: 10px;
-  margin-bottom: 2rem;
-}
-
-/* Saldo */
-.resume-saldo {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--color-background);
+  background-color: var;
+  border-radius: 10px;
+  margin-top: 2rem;
 }
 
-.saldo-info {
+.card-info {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   margin: 1rem;
-  padding-top: 0.7rem;
 }
 
-.saldo-info p {
+.card-info p {
   width: 60%;
+  margin: 0 0.75rem;
+  text-align: center;
 }
 
-.saldo-info h5 {
+.card-info h5 {
   font-weight: 400;
 }
 
-.saldo-info h4 {
+.card-info h4 {
   font-size: 1.3rem;
 }
 
-.saldo-saldo {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-.saldo-buttons {
+.card-buttons {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  margin-bottom: 0.25rem;
 }
 
+.card-buttons a {
+  padding: 0.3rem 1.5rem;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: 600;
+  transition: .5s;
+}
 
-#activeColor {
+.activeColor-1 {
   background-color: var(--color-three);
+  color: var(--color-two);
+}
+
+.activeColor-2 {
+  background-color: var(--color-two);
+  color: black;
+}
+
+.activeColor-3 {
+  background-color: var(--color-background);
+  color: black;
+}
+
+/* Saldo Card*/
+.info-saldo {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 0 0.75rem;
+}
+
+/* Investimento Card */
+.card-info i {
+  font-size: 2rem;
+  margin: 0 1rem;
+  padding: 0.75rem;
+  border-radius: 50%;
+  border: 2px solid var(--color-background);
+}
+
+/* Card Mini */
+.mini-resume-card {
+  margin-top: 2rem;
+}
+
+.resume-card {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-mini {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  background-color: var(--color-background);
+}
+
+.title-mini-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.title-mini-card i {
+  font-size: 1.25rem;
+  margin: 0 1rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.info-mini-card {
+  display: flex;
+  justify-content: center;
 }
