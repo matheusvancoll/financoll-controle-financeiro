@@ -1,12 +1,7 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import './Dashboard.css'
 
-import { UserDataContext } from '../../ContextAPI'
-
 export default function Dashboard() {
-
-  const [UserInfo, setUserInfo] = useContext(UserDataContext)
-
   return(
     <div className="dashboard__container">
       <navbar className="navbar">
@@ -15,7 +10,7 @@ export default function Dashboard() {
           <p>Entradas</p>
           <p>Saídas</p>
         </div>
-        <p>{UserInfo.user}</p>
+        <p>Username</p>
       </navbar>
 
       <div className="card__container">

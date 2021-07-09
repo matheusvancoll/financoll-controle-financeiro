@@ -13,6 +13,9 @@
   font-family: 'Nunito', sans-serif;
 }
 
+.navbar {
+  display: none;
+}
 
 .card__container {
   display: flex;
