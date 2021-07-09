@@ -7,14 +7,8 @@ import Dashboard from './Dashboard'
 export default function Router() {
   return(
     <Switch>
-      <Route exact path="/">
-        <Login />
-      </Route>
-      
-      <Route exact path="/dashboard">
-        <Dashboard />
-      </Route>
-
+      <Route exact path="/" component={Login} />
+      <Route exact path="/dashboard" component={Dashboard} />
     </Switch>
   )
 }
