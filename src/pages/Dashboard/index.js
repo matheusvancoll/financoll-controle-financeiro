@@ -28,8 +28,8 @@ export default function Dashboard() {
             </div>
           </div>
           <div className="card-buttons saldo">
-            <a href="/dashboard" className="activeColor-1">Nova Receira</a>
-            <a href="/dashboard" className="activeColor-2">Nova Despesa</a>
+            <a href="#" className="activeColor-1">Nova Receira</a>
+            <a href="#" className="activeColor-2">Nova Despesa</a>
           </div>
         </div>
         
@@ -41,7 +41,7 @@ export default function Dashboard() {
             <i className="fas fa-chart-line"></i>
           </div>
           <div className="card-buttons">
-            <a href="/dashboard" className="activeColor-3">Investimentos</a>
+            <a href="#" className="activeColor-3">Investimentos</a>
           </div>
         </div>
 
