@@ -4,6 +4,7 @@
   --color-one: #482D75;
   --color-two: #FFFFFF;
   --color-three: #985EF7;
+  --background-gradient-login: linear-gradient(45deg, rgba(2, 0, 36, 1) 0%, rgba(72, 45, 117, 1) 35%, rgba(179, 0, 255, 1) 100%);
 }
 
 /* Styles General of page */
@@ -13,7 +14,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Nunito', sans-serif;
-  background-color: var(--color-one);
+  background: var(--background-gradient-login);
 }
 
 /* Styles of Title page */
