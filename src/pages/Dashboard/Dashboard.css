@@ -1,18 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;800&display=swap');
-
-:root {
-  --color-one: #482D75;
-  --color-two: #FFFFFF;
-  --color-three: #985EF7;
-  --color-background: #dfdfdf;
-  --background-gradient-dashboard: linear-gradient(45deg, rgba(2, 0, 36, 1) 0%, rgba(72, 45, 117, 1) 35%, rgba(179, 0, 255, 1) 100%);
-}
-
 .dashboard__container {
   width: 100%;
   height: 100%;
-  font-family: 'Nunito', sans-serif;
   background: var(--background-gradient-dashboard);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card__container {
@@ -26,6 +19,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 /* Card */
@@ -79,7 +73,7 @@
 }
 
 .card-buttons a:hover {
-  background-color: cornflowerblue;
+  background-color: var(--color-contrast);
 }
 
 .activeColor-1 {

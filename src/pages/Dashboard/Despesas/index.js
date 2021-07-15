@@ -1,9 +1,13 @@
 import React from 'react'
+import './Despesas.css'
 
-export default function AdminDespesas() {
+import Navbar from '../Components/Navbard'
+
+export default function ControleDespesas() {
   return(
-    <div>
-      Saída de valores
+    <div className="despesas__container">
+      <Navbar activeLinkDespesas={true}/>
+      <p>lorem ipsummmm</p>
     </div>
   )
 }

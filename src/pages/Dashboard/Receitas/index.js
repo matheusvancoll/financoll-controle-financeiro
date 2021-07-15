@@ -1,9 +1,13 @@
 import React from 'react'
+import './Receitas.css'
 
-export default function AdminReceitas() {
+import Navbar from '../Components/Navbard'
+
+export default function ControleReceitas() {
   return(
-    <div>
-      Entradas de valores
+    <div className="receitas__container">
+      <Navbar activeLinkReceitas={true}/>
+      <p>lorem ipsummmm</p>
     </div>
   )
 }

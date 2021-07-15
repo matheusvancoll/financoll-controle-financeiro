@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 import './Dashboard.css'
 
 import Navbar from './Components/Navbard'
@@ -7,7 +9,7 @@ import ResumeItemList from './Components/ListResumeDashboardIndex'
 export default function Dashboard() {
   return(
     <div className="dashboard__container">
-      <Navbar />
+      <Navbar activeLinkInicio={true} />
       <div className="card__container">
         <div className="cards-responsive">
           <div className="card">
@@ -19,8 +21,8 @@ export default function Dashboard() {
               </div>
             </div>
             <div className="card-buttons saldo">
-              <a href="/novareceita" className="activeColor-1">Nova Receita</a>
-              <a href="/novadespesa" className="activeColor-2">Nova Despesa</a>
+              <Link to="/dashboard/controle-receita" className="activeColor-1">Nova Receita</Link>
+              <Link to="/dashboard/controle-despesas" className="activeColor-2">Nova Despesa</Link>
             </div>
           </div>
           
@@ -32,7 +34,7 @@ export default function Dashboard() {
               <i className="fas fa-chart-line"></i>
             </div>
             <div className="card-buttons">
-              <a href="/dashboard" className="activeColor-3">Investimentos</a>
+              <Link to="/dashboard/controle-investimentos" className="activeColor-3">Investimentos</Link>
             </div>
           </div>
         </div>
@@ -119,9 +121,6 @@ export default function Dashboard() {
             <ResumeItemList Title="CDB 115%" Value="800,00" Percent="30%"/>
           </div>
         </div>
-      </div>
-      <div>
-        huhu
       </div>
     </div>
   )
